@@ -1,4 +1,4 @@
-uTelemetry/obj
-uTelemetry/bin
-**/.vs
+**/obj/
+**/bin/
+**/.vs/
 .claude
