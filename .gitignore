@@ -1,4 +1,6 @@
 uTelemetry/obj
 uTelemetry/bin
+uTelemetry.Tests/obj
+uTelemetry.Tests/bin
 **/.vs
 .claude
