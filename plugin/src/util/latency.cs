@@ -8,5 +8,5 @@ using System.Threading.Tasks;
 
 public static class Latency
 {
-    
+
 }
