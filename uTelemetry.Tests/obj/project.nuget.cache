@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "A8MDrwbgTWCK/T6J77etQTwH7nbR3gG9ZebcM/hD6HssIl9+dSQ8Xiwqxfr7ni8Pr5PVvsPS8wwdBaQ6YSCpWw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kiera\\Documents\\Applications\\peekseek_stats_plugin\\PlayerStats\\uTelemetry.Tests\\uTelemetry.Tests.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kiera\\.nuget\\packages\\lib.harmony\\2.4.2\\lib.harmony.2.4.2.nupkg.sha512",
+    "C:\\Users\\kiera\\.nuget\\packages\\microsoft.codecoverage\\17.14.1\\microsoft.codecoverage.17.14.1.nupkg.sha512",
+    "C:\\Users\\kiera\\.nuget\\packages\\microsoft.net.test.sdk\\17.14.1\\microsoft.net.test.sdk.17.14.1.nupkg.sha512",
+    "C:\\Users\\kiera\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.10.0\\microsoft.testplatform.objectmodel.17.10.0.nupkg.sha512",
+    "C:\\Users\\kiera\\.nuget\\packages\\restoremonarchy.rocketredist\\3.26.1.1\\restoremonarchy.rocketredist.3.26.1.1.nupkg.sha512",
+    "C:\\Users\\kiera\\.nuget\\packages\\restoremonarchy.unturnedredist\\3.26.1.1\\restoremonarchy.unturnedredist.3.26.1.1.nupkg.sha512",
+    "C:\\Users\\kiera\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
+    "C:\\Users\\kiera\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
+    "C:\\Users\\kiera\\.nuget\\packages\\xunit\\2.9.3\\xunit.2.9.3.nupkg.sha512",
+    "C:\\Users\\kiera\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\kiera\\.nuget\\packages\\xunit.analyzers\\1.18.0\\xunit.analyzers.1.18.0.nupkg.sha512",
+    "C:\\Users\\kiera\\.nuget\\packages\\xunit.assert\\2.9.3\\xunit.assert.2.9.3.nupkg.sha512",
+    "C:\\Users\\kiera\\.nuget\\packages\\xunit.core\\2.9.3\\xunit.core.2.9.3.nupkg.sha512",
+    "C:\\Users\\kiera\\.nuget\\packages\\xunit.extensibility.core\\2.9.3\\xunit.extensibility.core.2.9.3.nupkg.sha512",
+    "C:\\Users\\kiera\\.nuget\\packages\\xunit.extensibility.execution\\2.9.3\\xunit.extensibility.execution.2.9.3.nupkg.sha512",
+    "C:\\Users\\kiera\\.nuget\\packages\\xunit.runner.visualstudio\\2.8.2\\xunit.runner.visualstudio.2.8.2.nupkg.sha512"
+  ],
+  "logs": []
+}

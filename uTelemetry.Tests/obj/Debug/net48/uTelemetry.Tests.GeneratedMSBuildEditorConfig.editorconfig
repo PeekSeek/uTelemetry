@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = uTelemetry.Tests
+build_property.ProjectDir = C:\Users\kiera\Documents\Applications\peekseek_stats_plugin\PlayerStats\uTelemetry.Tests\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

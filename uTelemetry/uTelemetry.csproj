@@ -9,6 +9,11 @@
 
   <ItemGroup>
 	  <PackageReference Include="RestoreMonarchy.RocketRedist" Version="3.*" ExcludeAssets="runtime" />
+	  <PackageReference Include="lib.harmony" Version="2.*" ExcludeAssets="runtime" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   
   <ItemGroup>
@@ -16,5 +21,4 @@
 	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-
 </Project>
