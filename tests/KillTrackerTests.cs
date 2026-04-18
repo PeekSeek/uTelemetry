@@ -8,7 +8,7 @@ public class KillTrackerTests
 {
     [Theory]
     [InlineData(-9.81f, 1.0f, 100f, 800f, -0.07664f)]
-    [InlineData(-9.81f, 1.0f, 0f,   800f,  0f)]
+    [InlineData(-9.81f, 1.0f, 0f, 800f, 0f)]
     [InlineData(-9.81f, 2.0f, 100f, 800f, -0.15328f)]
     [InlineData(-9.81f, 0.0f, 100f, 800f, 0f)]
     public void CalculateBulletDrop_ReturnsExpectedDrop(

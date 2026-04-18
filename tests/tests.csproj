@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\uTelemetry\uTelemetry.csproj" />
+    <ProjectReference Include="..\plugin\plugin.csproj" />
   </ItemGroup>
 
 </Project>

@@ -23,7 +23,7 @@ public class uTelemetry : RocketPlugin<Configuration>
         Task.Run(async () =>
         {
             await DiscordWebhookExample.SendMessage("hello world");
-        });        
+        });
     }
 
 
