@@ -1,0 +1,60 @@
+name: release
+
+on:
+  push:
+    branches: [master]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Read version from plugin.csproj
+        id: version
+        shell: pwsh
+        run: |
+          [xml]$csproj = Get-Content plugin/plugin.csproj
+          $version = $csproj.Project.PropertyGroup.Version
+          "version=$version" >> $env:GITHUB_OUTPUT
+          "tag=v$version"    >> $env:GITHUB_OUTPUT
+
+      - name: Check if tag already exists
+        id: check
+        shell: bash
+        run: |
+          if git rev-parse "refs/tags/${{ steps.version.outputs.tag }}" >/dev/null 2>&1; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Build
+        if: steps.check.outputs.exists == 'false'
+        run: dotnet build uTelemetry.sln --configuration Release
+
+      - name: Package artifact
+        if: steps.check.outputs.exists == 'false'
+        shell: pwsh
+        run: |
+          $out = "uTelemetry-${{ steps.version.outputs.version }}.zip"
+          Compress-Archive -Path plugin/bin/Release/net48/* -DestinationPath $out
+          "artifact=$out" >> $env:GITHUB_ENV
+
+      - name: Create GitHub release
+        if: steps.check.outputs.exists == 'false'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: ${{ steps.version.outputs.tag }}
+          generate_release_notes: true
+          files: ${{ env.artifact }}
