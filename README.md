@@ -1,5 +1,6 @@
 # uTelemetry
 
+[![release](https://img.shields.io/github/v/release/PeekSeek/uTelemetry?label=release)](https://github.com/PeekSeek/uTelemetry/releases/latest)
 [![tests](https://github.com/PeekSeek/uTelemetry/actions/workflows/tests.yml/badge.svg)](https://github.com/PeekSeek/uTelemetry/actions/workflows/tests.yml)
 [![lint](https://github.com/PeekSeek/uTelemetry/actions/workflows/lint.yml/badge.svg)](https://github.com/PeekSeek/uTelemetry/actions/workflows/lint.yml)
 [![license](https://img.shields.io/badge/license-PolyForm%20Noncommercial-blue)](LICENSE)
